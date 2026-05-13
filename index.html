@@ -81,7 +81,9 @@
 
     <div class="hero-image"
          role="img"
-         aria-label="Bild från Rossö">
+         aria-label="Bilder från Rossö">
+
+      <div id="hero-media-container"></div>
 
       <div class="hero-note">
 
@@ -437,6 +439,117 @@
 
     document.getElementById("current-year").textContent =
       new Date().getFullYear();
+
+    async function loadHeroMedia() {
+
+      const container =
+        document.getElementById("hero-media-container");
+
+      if (!container) {
+        return;
+      }
+
+      let heroMedia = [];
+
+      try {
+
+        const response =
+          await fetch("data/hero-media.json");
+
+        if (!response.ok) {
+          throw new Error("Could not load hero-media.json");
+        }
+
+        heroMedia = await response.json();
+
+      } catch (error) {
+
+        heroMedia = [
+          {
+            type: "image",
+            src: "images/hero/default.jpg",
+            duration: 8000
+          }
+        ];
+
+      }
+
+      if (!Array.isArray(heroMedia) ||
+          heroMedia.length === 0) {
+        return;
+      }
+
+      let heroIndex = 0;
+
+      function showNextHeroMedia() {
+
+        container.innerHTML = "";
+
+        const item = heroMedia[heroIndex];
+
+        heroIndex =
+          (heroIndex + 1) % heroMedia.length;
+
+        if (item.type === "video") {
+
+          let loopsDone = 0;
+
+          const wantedLoops =
+            item.loops || 1;
+
+          const video =
+            document.createElement("video");
+
+          video.className = "hero-video";
+
+          video.src = item.src;
+
+          video.autoplay = true;
+          video.muted = true;
+          video.playsInline = true;
+
+          video.addEventListener("ended", () => {
+
+            loopsDone++;
+
+            if (loopsDone < wantedLoops) {
+
+              video.currentTime = 0;
+              video.play();
+
+            } else {
+
+              showNextHeroMedia();
+
+            }
+
+          });
+
+          container.appendChild(video);
+
+          return;
+        }
+
+        const image =
+          document.createElement("div");
+
+        image.className = "hero-background";
+
+        image.style.backgroundImage =
+          `url('${item.src}')`;
+
+        container.appendChild(image);
+
+        setTimeout(
+          showNextHeroMedia,
+          item.duration || 8000
+        );
+      }
+
+      showNextHeroMedia();
+    }
+
+    loadHeroMedia();
 
   </script>
 
