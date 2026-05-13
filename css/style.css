@@ -407,6 +407,30 @@ footer {
   font-size: .92rem;
 }
 
+.facebook-placeholder {
+  margin: 14px 0;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f4f4f4;
+  border: 1px solid #dddddd;
+}
+
+.facebook-placeholder p {
+  margin: 0;
+  color: #444;
+}
+
+.facebook-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #1877f2;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 @media (max-width: 900px) {
   .header-inner {
     align-items: flex-start;
