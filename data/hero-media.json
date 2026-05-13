@@ -1,0 +1,22 @@
+[
+  {
+    "type": "image",
+    "src": "images/hero/IMG_0003.jpg",
+    "duration": 8000
+  },
+  {
+    "type": "image",
+    "src": "images/hero/IMG_3501.jpg",
+    "duration": 8000
+  },
+  {
+    "type": "image",
+    "src": "images/hero/IMG_7577.jpg",
+    "duration": 8000
+  },
+  {
+    "type": "video",
+    "src": "images/hero/sunset.mp4",
+    "loops": 8
+  }
+]
