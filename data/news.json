@@ -1,1 +1,16 @@
-
+[
+  {
+    "date": "2026-05-13",
+    "displayDate": "13 maj 2026",
+    "title": "Ny webbplats under uppbyggnad",
+    "summary": "Den nya sidan för Rossö samhälls- och fritidsförening byggs för att bli enkel att underhålla.",
+    "url": "news/new-website.html"
+  },
+  {
+    "date": "2026-05-09",
+    "displayDate": "9 maj 2026",
+    "title": "Planering inför året",
+    "summary": "Kommande aktiviteter, ansvariga personer och viktiga datum kan samlas här.",
+    "url": "#"
+  }
+]
