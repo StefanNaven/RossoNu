@@ -7,7 +7,7 @@
   <title>Rossös historia | Rossö samhälls- och fritidsförening</title>
 
   <meta name="description"
-        content="En kort berättelse om Rossös historia, havet, fisket och människorna som format platsen." />
+        content="Rossös historia – hummerhandel, fiske, jordbruk, tullstation och livet vid havet." />
 
   <meta name="theme-color" content="#d53b1d">
 
@@ -16,6 +16,66 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/icons/red_crab_32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="images/icons/red_crab_64.png">
   <link rel="apple-touch-icon" href="images/icons/red_crab_apple-touch-icon.png">
+
+  <style>
+    .history-section {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .history-article {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: 28px;
+      align-items: center;
+      margin-top: 28px;
+    }
+
+    .history-article:nth-child(even) {
+      grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+    }
+
+    .history-article:nth-child(even) .history-text {
+      order: 2;
+    }
+
+    .history-article:nth-child(even) .history-image {
+      order: 1;
+    }
+
+    .history-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+      display: block;
+    }
+
+    .history-caption {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      opacity: 0.75;
+    }
+
+    .history-facts {
+      margin-top: 16px;
+    }
+
+    .history-facts li + li {
+      margin-top: 8px;
+    }
+
+    @media (max-width: 800px) {
+      .history-article,
+      .history-article:nth-child(even) {
+        grid-template-columns: 1fr;
+      }
+
+      .history-article:nth-child(even) .history-text,
+      .history-article:nth-child(even) .history-image {
+        order: initial;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -41,7 +101,7 @@
 
         <ul>
           <li><a href="index.html#info">Föreningen</a></li>
-          <li><a href="historia.html" aria-current="page">Historia</a></li>
+          <li><a href="history.html" aria-current="page">Historia</a></li>
           <li><a href="index.html#info-links">Bra att veta</a></li>
           <li><a href="index.html#contact">Kontakt</a></li>
         </ul>
@@ -58,42 +118,34 @@
 
       <div class="eyebrow">📜 Rossös historia</div>
 
-      <h1>Rossö genom tiderna</h1>
+      <h1>Hummer, fiske och livet vid havet</h1>
 
       <p>
-        En kort berättelse om ön, havet och människorna som format Rossö.
+        Rossös historia är nära knuten till havet, hummerhandeln,
+        fisket och de människor som levt med ett ben i land och ett i sjön.
       </p>
 
       <div class="hero-actions">
-
-        <a class="button primary" href="#story">
-          Läs historien
-        </a>
-
-        <a class="button secondary" href="index.html">
-          Till startsidan
-        </a>
-
+        <a class="button primary" href="#history-story">Läs historien</a>
+        <a class="button secondary" href="index.html">Till startsidan</a>
       </div>
 
     </div>
 
     <div class="hero-image"
          role="img"
-         aria-label="Historisk och kustnära miljö från Rossö">
+         aria-label="Hummerbild från Rossös historia">
 
       <div class="hero-background"
-           style="background-image:url('images/history/startbild-scaled.jpg');">
+           style="background-image:url('images/history/hummer2-scaled.jpg');">
       </div>
 
       <div class="hero-note">
-
-        <strong>Historia, minnen och bilder</strong>
-
+        <strong>Rossö som hummercentrum</strong>
         <span>
-          Materialet kan byggas vidare över tid med fler berättelser från Rossö.
+          Under 1920-talet var Rossö, tillsammans med Smögen,
+          ett centrum för hummerhandel.
         </span>
-
       </div>
 
     </div>
@@ -102,200 +154,175 @@
 
   <main>
 
-    <section id="story">
+    <section id="history-story" class="history-section">
 
       <div class="section-head">
-
         <div>
+          <h2>Historien om Rossö</h2>
+          <p>
+            En sammanhållen berättelse baserad på materialet från den tidigare
+            sidan om Rossös historia.
+          </p>
+        </div>
+      </div>
 
-          <h2>En ö präglad av havet</h2>
+      <article class="card highlight history-article">
+
+        <div class="history-text">
+          <h3>Hummern satte Rossö på kartan</h3>
 
           <p>
-            Rossös historia hänger nära samman med havet, skärgården,
-            fisket och livet längs Bohuskusten.
+            Rossö är särskilt känt för sin historia som hummercentrum.
+            På 1920-talet var Rossö, tillsammans med Smögen, ett av de
+            viktigaste centrumen för hummerhandel.
           </p>
 
+          <p style="margin-top:14px;">
+            Hummerfisket har fortsatt att ha en stark ställning på Rossö.
+            När hummerpremiären kommer på hösten väcks både traditioner,
+            minnen och aktivitet längs bryggor och sjöbodar.
+          </p>
         </div>
 
-      </div>
+        <div class="history-image">
+          <img src="images/history/hummer2-scaled.jpg"
+               alt="Hummer, kopplat till Rossös historia som hummercentrum">
+          <div class="history-caption">
+            Bild från den tidigare sidan om Rossös historia.
+          </div>
+        </div>
 
-      <div class="content-grid">
+      </article>
 
-        <article class="card highlight">
+      <article class="card history-article">
 
-          <h3>Från vardag vid havet till dagens Rossö</h3>
-
-          <p>
-            Genom generationer har Rossö varit en plats där vardagen formats
-            av närheten till havet. Fiske, båtliv, kustnära arbete och
-            skärgårdens natur har satt sin prägel på både bebyggelse,
-            gemenskap och livet på ön.
-          </p>
-
-          <p style="margin-top:16px;">
-            I dag är Rossö både en plats för boende, besökare och människor
-            med stark anknytning till ön. Historien finns kvar i miljöerna,
-            berättelserna, husen, hamnen och landskapet.
-          </p>
-
-        </article>
-
-        <article class="card">
-
-          <img src="images/history/fonster1-1024x1024.jpg"
-               alt="Fönsterdetalj från äldre miljö"
-               style="width:100%;border-radius:14px;margin-bottom:16px;">
-
-          <h3>Spår av äldre miljöer</h3>
+        <div class="history-text">
+          <h3>Ett ben i land och ett i sjön</h3>
 
           <p>
-            Äldre hus, detaljer och vardagsmiljöer berättar om hur platsen
-            har använts och förändrats över tid.
+            På Rossö har livet länge formats av både hav och land.
+            Vid sidan av fisket fanns båtbyggeri, tunnbinderi,
+            sillsalteri och stenhuggeri. Fisket kombinerades ofta med
+            småskaligt jordbruk.
           </p>
 
-        </article>
+          <p style="margin-top:14px;">
+            Fastigheterna var ofta smala, så att fler skulle få tillgång
+            till åkerjord, skog och strandrätt. Potatis, spannmål och
+            grönsaker odlades för husbehov, och på södra Rossö fanns en
+            kvarn där öns spannmål kunde malas till mjöl.
+          </p>
+        </div>
 
-      </div>
+        <div class="history-image">
+          <img src="images/history/slåtter-1024x768.jpg"
+               alt="Slåtter och småskaligt jordbruk på Rossö">
+          <div class="history-caption">
+            Slåtter och jordbruk som del av livet på Rossö.
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card history-article">
+
+        <div class="history-text">
+          <h3>Fisket i centrum</h3>
+
+          <p>
+            För omkring hundra år sedan bodde över 600 personer på Rossö
+            och grannön Rundö. Mycket av livet kretsade kring fisket.
+            Fiskeskutorna låg i Rossö hamn när de inte var ute på sillfiske
+            eller användes i fraktfart.
+          </p>
+
+          <p style="margin-top:14px;">
+            På båda sidor av sundet fanns sillsalterier, och på Rundö fanns
+            ett tunnbinderi där trätunnor för sill och makrill tillverkades.
+            I Rossö hamn finns också kopplingen till fiskemuseet i Märtas sjöbod.
+          </p>
+        </div>
+
+        <div class="history-image">
+          <img src="images/history/mat-1359914_1280-849x1024.jpg"
+               alt="Sill och fisk, kopplat till Rossös fiskehistoria">
+          <div class="history-caption">
+            Fisket var en central del av Rossös äldre näringar.
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card history-article">
+
+        <div class="history-text">
+          <h3>Hummerhandeln förr</h3>
+
+          <p>
+            Sundet mellan Rossö och Rundö hade ett skyddat läge och god
+            genomströmning av vatten, vilket gjorde platsen lämplig för
+            lagring av levande hummer. Lagring i större skala började här
+            på 1860-talet.
+          </p>
+
+          <p style="margin-top:14px;">
+            Som mest fanns omkring 500 hummersumpar, med cirka 200 humrar
+            i varje. Hummern kördes vidare till järnvägsstationen i Överby
+            och skickades levande till köpare runt om i Sverige.
+          </p>
+        </div>
+
+        <div class="history-image">
+          <img src="images/history/lobster-483279_1280-1024x682.jpg"
+               alt="Hummer, kopplat till äldre hummerhandel på Rossö">
+          <div class="history-caption">
+            Rossösundet användes länge för lagring av hummer.
+          </div>
+        </div>
+
+      </article>
 
     </section>
 
     <section>
 
       <div class="section-head">
-
         <div>
-
-          <h2>Några nedslag i historien</h2>
-
+          <h2>Visste du att</h2>
           <p>
-            En enkel tidslinje som kan fyllas på när mer material finns.
+            Några korta nedslag från Rossös historia.
           </p>
-
         </div>
-
       </div>
 
       <div class="cards">
 
         <article class="card">
-
-          <div class="card-icon">🌊</div>
-
-          <h3>Livet vid kusten</h3>
-
+          <div class="card-icon">🛃</div>
+          <h3>Tullstation</h3>
           <p>
-            Havet har varit en självklar del av Rossö. Fiske, transporter,
-            båtar och väder har påverkat både arbete och vardagsliv.
+            Från tidigt 1920-tal till mitten av 1950-talet hade Rossö
+            tullstation.
           </p>
-
         </article>
 
         <article class="card">
-
-          <div class="card-icon">🦞</div>
-
-          <h3>Fiske och sjöliv</h3>
-
+          <div class="card-icon">👮</div>
+          <h3>Fjärdingsman</h3>
           <p>
-            Fisket och sjölivet har haft stor betydelse för Rossö och för
-            många av de människor som bott och verkat här.
+            Under 1940-talet fanns en fjärdingsman, alltså polis,
+            stationerad på Rossö.
           </p>
-
         </article>
 
         <article class="card">
-
-          <div class="card-icon">⚓</div>
-
-          <h3>Tullstationen</h3>
-
+          <div class="card-icon">🪖</div>
+          <h3>Andra världskriget</h3>
           <p>
-            På den tidigare sidan om Rossö nämns att Rossö hade tullstation
-            från tidigt 1920-tal till mitten av 1950-talet, samt att en
-            fjärdingsman var stationerad på Rossö under 1940-talet.
+            Under andra världskriget var Rossö periodvis starkt befäst.
+            Rester av luftvärnsfästen finns kvar på bland annat Hageberget
+            och Höjdeberget.
           </p>
-
-        </article>
-
-        <article class="card">
-
-          <div class="card-icon">🏡</div>
-
-          <h3>Rossö i dag</h3>
-
-          <p>
-            Rossö är fortsatt en levande plats med boende, föreningsliv,
-            natur, besökare och stark lokal anknytning.
-          </p>
-
-        </article>
-
-      </div>
-
-    </section>
-
-    <section>
-
-      <div class="section-head">
-
-        <div>
-
-          <h2>Bilder från Rossö</h2>
-
-          <p>
-            Bildmaterial från den tidigare webbplatsen kan placeras i
-            <code>images/history</code> och användas här.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="cards">
-
-        <article class="card">
-
-          <img src="images/history/startbild-scaled.jpg"
-               alt="Vy över hav och klippor vid Rossö"
-               style="width:100%;border-radius:12px;margin-bottom:14px;">
-
-          <h3>Kustlandskapet</h3>
-
-          <p>
-            Havet, klipporna och skärgården är en central del av Rossös
-            identitet.
-          </p>
-
-        </article>
-
-        <article class="card">
-
-          <img src="images/history/hummer-1024x1024.jpg"
-               alt="Fiske och redskap vid brygga"
-               style="width:100%;border-radius:12px;margin-bottom:14px;">
-
-          <h3>Fiske och redskap</h3>
-
-          <p>
-            Bilder från fisket och arbetet vid havet ger en tydlig koppling
-            till Rossös historia.
-          </p>
-
-        </article>
-
-        <article class="card">
-
-          <img src="images/history/fonster1-1024x1024.jpg"
-               alt="Detalj från äldre fönster"
-               style="width:100%;border-radius:12px;margin-bottom:14px;">
-
-          <h3>Detaljer och minnen</h3>
-
-          <p>
-            Små detaljer från äldre miljöer hjälper till att bevara känslan
-            av platsens historia.
-          </p>
-
         </article>
 
       </div>
@@ -307,24 +334,19 @@
       <div class="content-grid">
 
         <article class="card highlight">
-
-          <h3>Har du fler berättelser eller bilder?</h3>
-
+          <h3>Har du fler bilder eller berättelser?</h3>
           <p>
             Föreningen tar gärna emot äldre fotografier, minnen och korta
-            berättelser från Rossö. På så sätt kan sidan kompletteras och
-            bevara mer av öns historia.
+            berättelser från Rossö. På så sätt kan historien kompletteras
+            över tid.
           </p>
-
         </article>
 
         <article class="card">
-
-          <h3>Gå tillbaka</h3>
-
+          <h3>Tillbaka till startsidan</h3>
           <p>
-            Vill du komma tillbaka till praktisk information, länkar och
-            kontaktvägar finns allt samlat på startsidan.
+            På startsidan finns praktisk information, länkar och kontaktvägar
+            samlade på ett ställe.
           </p>
 
           <p style="margin-top:18px;">
@@ -332,7 +354,6 @@
               Till startsidan
             </a>
           </p>
-
         </article>
 
       </div>
@@ -342,18 +363,14 @@
   </main>
 
   <footer>
-
     © <span id="current-year"></span>
     Rossö samhälls- och fritidsförening · Rossö, Strömstad ·
     <a href="index.html">Startsida</a>
-
   </footer>
 
   <script>
-
     document.getElementById("current-year").textContent =
       new Date().getFullYear();
-
   </script>
 
 </body>
