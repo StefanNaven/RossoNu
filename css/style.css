@@ -283,8 +283,10 @@ section[id] { scroll-margin-top: 100px; }
 .text-link { color: var(--sea-dark); font-weight: 750; }
 .external-link::after { content: " ↗"; }
 
-.facebook-card { min-width: 0; overflow: hidden; }
-.fb-page { max-width: 100%; }
+.facebook-card {
+  min-width: 0;
+}
+
 .fb-fallback {
   margin-top: 14px;
   padding: 16px;
