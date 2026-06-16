@@ -1,22 +1,22 @@
 [
   {
     "type": "image",
-    "src": "images/hero/IMG_0003.jpg",
+    "src": "images/index/hero/rosso-01.jpg",
     "duration": 8000
   },
   {
     "type": "image",
-    "src": "images/hero/IMG_3501.jpg",
+    "src": "images/index/hero/rosso-02.jpg",
     "duration": 8000
   },
   {
     "type": "image",
-    "src": "images/hero/IMG_7577.jpg",
+    "src": "images/index/hero/rosso-03.jpg",
     "duration": 8000
   },
   {
     "type": "video",
-    "src": "images/hero/sunset.mp4",
+    "src": "images/index/hero/sunset.mp4",
     "loops": 8
   }
 ]

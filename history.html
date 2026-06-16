@@ -1,376 +1,97 @@
 <!doctype html>
 <html lang="sv">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rossös historia | Rossö samhälls- och fritidsförening</title>
-
-  <meta name="description"
-        content="Rossös historia – hummerhandel, fiske, jordbruk, tullstation och livet vid havet." />
-
+  <meta name="description" content="Rossös historia – hummerhandel, fiske, jordbruk, tullstation och livet vid havet.">
+  <meta name="theme-color" content="#d53b1d">
+  <link rel="canonical" href="https://stefannaven.github.io/RossoNu/history.html">
   <meta property="og:title" content="Rossös historia | Rossö samhälls- och fritidsförening">
   <meta property="og:description" content="Rossös historia – hummerhandel, fiske, jordbruk, tullstation och livet vid havet.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stefannaven.github.io/RossoNu/history.html">
-  <meta property="og:image" content="https://stefannaven.github.io/RossoNu/images/red_crab.jpg">
+  <meta property="og:image" content="https://stefannaven.github.io/RossoNu/images/shared/red-crab.jpg">
   <meta property="og:image:alt" content="Röd krabba som symbol för Rossö samhälls- och fritidsförening">
-
-  <meta name="theme-color" content="#d53b1d">
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/red_crab_32.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="images/icons/red_crab_64.png">
-  <link rel="apple-touch-icon" href="images/icons/red_crab_apple-touch-icon.png">
-
-  <style>
-    .history-section {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .history-article {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-      gap: 28px;
-      align-items: center;
-      margin-top: 28px;
-    }
-
-    .history-article:nth-child(even) {
-      grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
-    }
-
-    .history-article:nth-child(even) .history-text {
-      order: 2;
-    }
-
-    .history-article:nth-child(even) .history-image {
-      order: 1;
-    }
-
-    .history-image img,
-    .history-hero-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 18px;
-      display: block;
-    }
-
-    .history-hero-card {
-      background: #fff;
-      border-radius: 32px;
-      padding: 18px;
-      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
-    }
-
-    .history-hero-card h2 {
-      margin-top: 18px;
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-    }
-
-    .history-hero-card p {
-      margin-top: 12px;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 800px) {
-      .history-article,
-      .history-article:nth-child(even) {
-        grid-template-columns: 1fr;
-      }
-
-      .history-article:nth-child(even) .history-text,
-      .history-article:nth-child(even) .history-image {
-        order: initial;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/shared/icons/red-crab-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/shared/icons/red-crab-64.png">
+  <link rel="apple-touch-icon" href="images/shared/icons/red-crab-apple-touch-icon.png">
+</head><body>
+<a class="skip-link" href="#main-content">Hoppa till innehållet</a>
 <header class="site-header">
-
   <div class="header-inner">
-
     <a class="brand" href="index.html" aria-label="Till startsidan">
-
-      <img class="brand-mark"
-           src="images/red_crab.jpg"
-           alt="Rossö ikon">
-
-      <span>
-        <strong>Rossö samhälls- och fritidsförening</strong>
-        <span>Saltblänk året om</span>
-      </span>
-
+      <img class="brand-mark" src="images/shared/red-crab.jpg" alt="">
+      <span><strong>Rossö samhälls- och fritidsförening</strong><span>Saltblänk året om</span></span>
     </a>
-
     <nav aria-label="Huvudmeny">
       <ul>
-        <li><a href="index.html#info">Föreningen</a></li>
-        <li><a href="history.html" aria-current="page">Historia</a></li>
-        <li><a href="index.html#info-links">Bra att veta</a></li>
-        <li><a href="index.html#contact">Kontakt</a></li>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="discover.html">Upptäck Rossö</a></li>
+          <li><a href="history.html" aria-current="page">Historia</a></li>
+          <li><a href="community.html">Gemenskap</a></li>
+          <li><a href="visit.html">Besöka Rossö</a></li>
+          <li><a href="about.html">Om föreningen</a></li>
       </ul>
     </nav>
-
   </div>
-
 </header>
-
 <section class="hero">
-
   <div class="hero-text">
-
     <div class="eyebrow">📜 Rossös historia</div>
-
     <h1>Rossö genom tiderna</h1>
-
-    <p>
-      Rossös historia präglas av havet, fisket, hummerhandeln,
-      jordbruket och människorna som byggt upp ön genom generationer.
-    </p>
-
-    <div class="hero-actions">
-      <a class="button primary" href="#history-story">Läs historien</a>
-      <a class="button secondary" href="index.html">Till startsidan</a>
-    </div>
-
+    <p>Rossös historia präglas av havet, fisket, hummerhandeln, jordbruket och människorna som byggt upp ön genom generationer.</p>
+    <div class="hero-actions"><a class="button primary" href="#history-story">Läs historien</a><a class="button secondary" href="community.html">Rossö hembygdsförening</a></div>
   </div>
-
   <div class="hero-image">
-
     <article class="history-hero-card">
-
-      <img src="images/history/hummer2-2048x725.jpg"
-           alt="Hummersumpar i vattnet vid Rossö">
-
-      <h2>Historia</h2>
-
-      <p>
-        Rossö är känt för sin historia som hummercentrum. Tillsammans med
-        Smögen var Rossö på 1920-talet hummerhandelns absoluta centrum.
-        Hummerhistorien har bleknat, men när det blir dags för hummerpremiär
-        på hösten vaknar minnen till liv och det blir fart i sjöbodar och vid
-        bryggor.
-      </p>
-
-      <p>
-        Hummerfisket är heligt på Rossö. Bland hummerfiskarna finns både
-        rutinerade yrkesfiskare och mer lyckosökande fritidsfiskare. Ett har
-        de gemensamt – hopp om att fånga en lika stor hummer som den som
-        rossöbon Kjell Johansson fångade utanför Ramsö en höst i slutet av
-        1990-talet. Godbiten vägde hela 4,4 kilo och fångsten orsakade
-        uppståndelse i pressen land och rike runt.
-      </p>
-
+      <img src="images/history/hummer-sumpar.jpg" alt="Hummersumpar i vattnet vid Rossö">
+      <h2>Hummercentrum</h2>
+      <p>Rossö är känt för sin historia som hummercentrum. Tillsammans med Smögen var Rossö på 1920-talet hummerhandelns absoluta centrum.</p>
     </article>
-
   </div>
-
 </section>
-
-<main>
-
-<section id="history-story" class="history-section">
-
-  <div class="section-head">
-    <div>
-      <h2>Rossös historia</h2>
-    </div>
-  </div>
-
-  <article class="card history-article">
-
-    <div class="history-text">
-
-      <h3>På två ben</h3>
-
-      <p>
-        På Rossö har man alltid levt med ”ett ben i land och ett i sjön”.
-        Båtbyggeri, tunnbinderi, sillsalteri och stenhuggeri var vid sidan av
-        fisket huvudsakliga sysselsättningar. Fisket kombinerades ofta med
-        jordbruk i liten skala.
-      </p>
-
-      <p>
-        Fastigheterna var många och smala för att ge alla chans till ett
-        stycke åkerjord, lite skog för brännvedens skull samt en strandrätt
-        för fisket. På åkern odlades potatis, spannmål och grönsaker för
-        husbehov. På södra Rossö fanns en kvarn där spannmål från öns åkrar
-        maldes till mjöl. Rossö hyste en gång tre pensionat och många drygade,
-        förr som nu, ut sina inkomster genom att hyra ut till badgäster
-        sommartid.
-      </p>
-
-    </div>
-
-    <div class="history-image">
-
-      <img src="images/history/slåtter-1024x768.jpg"
-           alt="Slåtter på Rossö">
-
-    </div>
-
-  </article>
-
-  <article class="card history-article">
-
-    <div class="history-text">
-
-      <h3>Fisket i centrum</h3>
-
-      <p>
-        För hundra år sedan bodde mer än 600 personer på Rossö och grannön
-        Rundö. Det mesta kretsade kring fisket. I Rossö hamn låg fiskeskutorna
-        på redden när de inte var på sillfiske utanför Island eller tjänstgjorde
-        i fraktfart.
-      </p>
-
-      <p>
-        Doften av saltad fisk kunde ligga tung över Långesand, som är namnet på
-        Rossös största hamn. På stränderna längs sundet mellan Rossö och Rundö
-        låg fram till mitten av 1950-talet hundratals hummersumpar på tork i
-        väntan på hösten och det för ön speciella hummerfisket. Rossö var under
-        lång tid Sveriges näst största lagringsplats för hummer.
-      </p>
-
-      <p>
-        På båda sidor av sundet fanns sillsalterier och på Rundö fanns fram till
-        sekelskiftet ett tunnbinderi där trätunnor för lagring av sill och
-        makrill tillverkades. Flera av de unika verktygen finns bevarade i
-        hembygdsföreningens fiskemuseum i Rossö hamn. Museet är inhyst i
-        ”Märtas sjöbod” i Rossö hamn.
-      </p>
-
-    </div>
-
-    <div class="history-image">
-
-      <img src="images/history/mat-1359914_1280-849x1024.jpg"
-           alt="Fisket på Rossö">
-
-    </div>
-
-  </article>
-
-  <article class="card history-article">
-
-    <div class="history-text">
-
-      <h3>Hummerhandeln förr</h3>
-
-      <p>
-        Det skyddade läget samt den goda genomströmningen av vatten i sundet
-        mellan Rossö och Rönnö (Rundö) gjorde sundet perfekt för förvaring av
-        hummer.
-      </p>
-
-      <p>
-        Lagring av hummer i större skala började här på 1860-talet.
-        Hummerhandlarna från Rossö köpte upp hummer från fiskare längs kusten.
-        Inköpsturerna gick bland annat till Fjällbacka/Väderöarna i söder och
-        till Koster och norska Arendal i nordväst.
-      </p>
-
-      <p>
-        Fångsterna av hummer lagrades i sumpar som tidvis fyllde hela
-        Rossösundet. Som mest fanns här 500 sumpar med vardera cirka 200
-        humrar. När det var dags för leverans gick man ned för att
-        ”breggle” hummer, det vill säga håva upp hummern ur sumparna.
-        Ett hårt jobb på vintern när sumparna var täckta med is och snö.
-      </p>
-
-      <p>
-        Leveranserna av hummer till köpare runt om i Sverige gick sedan via
-        järnvägsstationen i Överby. Dit kördes den dyrbara lasten först med
-        häst och vagn, senare med bil, från Rossö. Hummern levererades levande.
-        Nedbäddad i trälådor med is, tidningspapper och träull kunde hummern
-        klara sig i flera dygn. Tåget från västkusten till Stockholm tog på
-        1950-talet ungefär ett dygn.
-      </p>
-
-      <p>
-        Storhetstiden för hummerhandeln på Rossö var över i mitten av
-        1960-talet, men lagring i mindre skala förekom fram till 1990-talet.
-        Än idag lagras en och annan hummer i sundet mellan Rossö och Rundö.
-      </p>
-
-    </div>
-
-    <div class="history-image">
-
-      <img src="images/history/lobster-483279_1280-1024x682.jpg"
-           alt="Hummerhandel på Rossö">
-
-    </div>
-
-  </article>
-
-</section>
-
-<section>
-
-  <div class="section-head">
-    <div>
-      <h2>Visste du att?</h2>
-    </div>
-  </div>
-
-  <div class="cards">
-
-    <article class="card">
-      <div class="card-icon">🛃</div>
-      <h3>Tullstation</h3>
-      <p>
-        Från tidigt 1920-tal till mitten av 1950-talet hade Rossö en
-        tullstation.
-      </p>
+<main id="main-content">
+  <section id="history-story">
+    <div class="section-head"><div><h2>Rossös historia</h2><p>Berättelser om arbete och liv med ett ben i land och ett i sjön.</p></div></div>
+    <article class="card history-article">
+      <div class="history-text"><h3>På två ben</h3><p>På Rossö har man alltid levt med ”ett ben i land och ett i sjön”. Båtbyggeri, tunnbinderi, sillsalteri och stenhuggeri var vid sidan av fisket huvudsakliga sysselsättningar. Fisket kombinerades ofta med jordbruk i liten skala.</p><p>Fastigheterna var många och smala för att ge alla chans till ett stycke åkerjord, lite skog för brännvedens skull samt en strandrätt för fisket. På åkern odlades potatis, spannmål och grönsaker för husbehov. På södra Rossö fanns en kvarn där spannmål från öns åkrar maldes till mjöl. Rossö hyste en gång tre pensionat och många drygade, förr som nu, ut sina inkomster genom att hyra ut till badgäster sommartid.</p></div>
+      <div class="history-image"><img loading="lazy" src="images/history/slatter.jpg" alt="Slåtter på Rossö"></div>
     </article>
-
-    <article class="card">
-      <div class="card-icon">👮</div>
-      <h3>Fjärdingsman</h3>
-      <p>
-        Under 1940-talet fanns en fjärdingsman, alltså polis,
-        stationerad på Rossö.
-      </p>
+    <article class="card history-article">
+      <div class="history-text"><h3>Fisket i centrum</h3><p>För hundra år sedan bodde mer än 600 personer på Rossö och grannön Rundö. Det mesta kretsade kring fisket. I Rossö hamn låg fiskeskutorna på redden när de inte var på sillfiske utanför Island eller tjänstgjorde i fraktfart.</p><p>Doften av saltad fisk kunde ligga tung över Långesand, som är namnet på Rossös största hamn. På stränderna längs sundet mellan Rossö och Rundö låg fram till mitten av 1950-talet hundratals hummersumpar på tork i väntan på hösten och det för ön speciella hummerfisket. Rossö var under lång tid Sveriges näst största lagringsplats för hummer.</p><p>På båda sidor av sundet fanns sillsalterier och på Rundö fanns fram till sekelskiftet ett tunnbinderi där trätunnor för lagring av sill och makrill tillverkades. Flera av de unika verktygen finns bevarade i hembygdsföreningens fiskemuseum i Rossö hamn.</p></div>
+      <div class="history-image"><img loading="lazy" src="images/history/fisket.jpg" alt="Fisket på Rossö"></div>
     </article>
-
-    <article class="card">
-      <div class="card-icon">🪖</div>
-      <h3>Andra världskriget</h3>
-      <p>
-        Under andra världskriget var Rossö under perioder starkt befäst av
-        militära förband. Rester av luftvärnsfästen finns kvar på Hageberget
-        och Höjdeberget. Luftvärn fanns även nergrävt i Blåsoppskogen.
-        Bevakningsposter var stationerade på Oxefjäll, Kockholmen,
-        Klemensberget, Höjdeberget och Hageberget.
-      </p>
+    <article class="card history-article">
+      <div class="history-text"><h3>Hummerhandeln förr</h3><p>Det skyddade läget samt den goda genomströmningen av vatten i sundet mellan Rossö och Rönnö (Rundö) gjorde sundet lämpligt för förvaring av hummer.</p><p>Lagring av hummer i större skala började här på 1860-talet. Hummerhandlarna från Rossö köpte upp hummer från fiskare längs kusten. Inköpsturerna gick bland annat till Fjällbacka och Väderöarna i söder samt till Koster och norska Arendal i nordväst.</p><p>Fångsterna lagrades i sumpar som tidvis fyllde hela Rossösundet. Som mest fanns här 500 sumpar med vardera cirka 200 humrar. När det var dags för leverans gick man ned för att ”breggle” hummer, det vill säga håva upp hummern ur sumparna.</p><p>Leveranserna gick via järnvägsstationen i Överby. Hummern levererades levande i trälådor med is, tidningspapper och träull. Storhetstiden för hummerhandeln på Rossö var över i mitten av 1960-talet, men lagring i mindre skala förekom fram till 1990-talet.</p></div>
+      <div class="history-image"><img loading="lazy" src="images/history/hummerhandel.jpg" alt="Hummerhandel på Rossö"></div>
     </article>
+  </section>
 
-  </div>
+  <section>
+    <div class="section-head"><div><h2>Visste du att?</h2></div></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">🛃</div><h3>Tullstation</h3><p>Från tidigt 1920-tal till mitten av 1950-talet hade Rossö en tullstation.</p></article>
+      <article class="card"><div class="card-icon">👮</div><h3>Fjärdingsman</h3><p>Under 1940-talet fanns en fjärdingsman, alltså polis, stationerad på Rossö.</p></article>
+      <article class="card"><div class="card-icon">🪖</div><h3>Andra världskriget</h3><p>Under andra världskriget var Rossö under perioder starkt befäst. Rester av luftvärnsfästen finns kvar på Hageberget och Höjdeberget. Bevakningsposter fanns bland annat på Oxefjäll, Kockholmen och Klemensberget.</p></article>
+    </div>
+  </section>
 
-</section>
-
+  <section class="cta-band">
+    <div><h2>Mer lokalhistoria</h2><p>Rossö hembygdsförening samlar personer med intresse för öns historia och kulturarv.</p></div>
+    <a class="button facebook external-link" href="https://www.facebook.com/groups/551172959421816/" target="_blank" rel="noopener">Rossö hembygdsförening</a>
+  </section>
 </main>
-
 <footer>
-  © <span id="current-year"></span>
-  Rossö samhälls- och fritidsförening · Rossö, Strömstad ·
-  <a href="index.html">Startsida</a>
+  <div class="footer-inner">
+    <span>© <span data-current-year></span> Rossö samhälls- och fritidsförening · Rossö, Strömstad</span>
+    <span class="footer-links">
+      <a href="about.html">Om föreningen</a>
+      <a href="https://www.facebook.com/profile.php?id=100064710427895" target="_blank" rel="noopener">Facebook ↗</a>
+    </span>
+  </div>
 </footer>
-
-<script>
-  document.getElementById("current-year").textContent =
-    new Date().getFullYear();
-</script>
-
+<script src="js/site.js"></script>
 </body>
 </html>
