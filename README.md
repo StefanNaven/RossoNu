@@ -1,151 +1,74 @@
 # RossoNu
 
-Webbplats för Rossö samhälls- och fritidsförening.
+Webbplats för Rossö samhälls- och fritidsförening. Publiceras via GitHub Pages.
 
-Publiceras via GitHub Pages.
+## Sidor
 
+| Menynamn | Fil |
+|---|---|
+| Hem | `index.html` |
+| Upptäck Rossö | `discover.html` |
+| Historia | `history.html` |
+| Gemenskap | `community.html` |
+| Besöka Rossö | `visit.html` |
+| Om föreningen | `about.html` |
 
 ## Struktur
 
 ```text
 RossoNu/
 ├── index.html
+├── discover.html
+├── history.html
+├── community.html
+├── visit.html
+├── about.html
 ├── css/
+│   └── style.css
 ├── js/
+│   └── site.js
 ├── data/
-├── news/
+│   └── hero-media.json
 ├── images/
-├── assets/
+│   ├── shared/
+│   │   └── icons/
+│   ├── index/
+│   │   └── hero/
+│   ├── discover/
+│   ├── history/
+│   ├── community/
+│   ├── visit/
+│   └── about/
+├── documents/
 └── README.md
 ```
 
+## Bildprincip
 
-## Grundprinciper
+Bilder läggs i mappen för den sida där de används:
 
-- Engelska mapp- och filnamn
-- Små bokstäver
-- Inga mellanslag
-- Kebab-case för filnamn
+- `images/index/` – startsidan och bildspelet
+- `images/discover/` – Upptäck Rossö
+- `images/history/` – historiasidan
+- `images/community/` – Gemenskap
+- `images/visit/` – Besöka Rossö
+- `images/about/` – Om föreningen
+- `images/shared/` – logotyp, favicon och bilder som används på flera sidor
 
-Exempel:
+Använd små bokstäver, inga mellanslag eller å/ä/ö och kebab-case, exempelvis `kockholmen-solnedgang.webp`.
 
-```text
-summer-festival.html
-board-meeting.html
-```
+## Dokument
 
+Stadgar, protokoll och andra filer kan läggas i `documents/`. Använd tydliga filnamn, exempelvis `stadgar.pdf` eller `arsmotesprotokoll-2026.pdf`.
 
-## Beskrivning av filer och mappar
+## Startsidan och Facebook
 
-
-### index.html
-
-Startsidan för webbplatsen.
-
-Här finns:
-- layout
-- navigation
-- sektioner
-- innehållsytor
-
-
-### css/
-
-Innehåller webbplatsens CSS-filer.
-
-Exempel:
-
-```text
-style.css
-```
-
-Används för:
-- färger
-- layout
-- responsiv design
-- typografi
-
-
-### js/
-
-Innehåller JavaScript-filer.
-
-Exempel:
-
-```text
-content.js
-```
-
-Används för:
-- dynamiskt innehåll
-- inläsning av data
-- funktioner på sidan
-
-
-### data/
-
-Innehåller JSON-filer med innehåll.
-
-Exempel:
-
-```text
-news.json
-events.json
-```
-
-Används för:
-- nyhetsdata
-- evenemangsdata
-
-
-### news/
-
-Innehåller separata nyhetssidor.
-
-Exempel:
-
-```text
-harbor-festival.html
-new-website.html
-```
-
-
-### images/
-
-Innehåller bilder för webbplatsen.
-
-Exempel:
-
-```text
-hero.jpg
-harbor.jpg
-midsummer.jpg
-```
-
-
-### assets/
-
-Innehåller övriga filer.
-
-Exempel:
-- PDF-filer
-- dokument
-- logotyper
-
+Föreningens egen Facebook-sida visas på startsidan och används som primär kanal för aktuella meddelanden. Övriga Facebook-grupper och verksamheter länkas från de sidor där de hör hemma.
 
 ## GitHub Pages
 
-Repository:
-- RossoNu
-
-Publicering:
-- Settings → Pages
-
-Source:
-- Deploy from a branch
-
-Branch:
-- main
-
-Folder:
-- /root
+- **Repository:** `RossoNu`
+- **Settings → Pages**
+- **Source:** Deploy from a branch
+- **Branch:** `main`
+- **Folder:** `/root`
